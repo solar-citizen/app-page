@@ -1,0 +1,47 @@
+// HEADER template
+
+body {
+  font-family: $inter;
+
+  a {
+    text-decoration: none;
+  }
+}
+
+.header {
+  .top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+  }
+
+  .navbar {
+    .collapse {
+      .nav-item {
+        padding: 0 0.4rem;
+
+        > a {
+          color: white;
+
+          &:hover {
+            color: $dark;
+          }
+        }
+
+        .btn {
+          color: white;
+
+          &:hover {
+            color: $dark;
+          }
+        }
+      }
+    }
+
+    @media screen and (max-width: 992px) {
+      background: $purple;
+    }
+  }
+}
