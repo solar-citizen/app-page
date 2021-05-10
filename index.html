@@ -29,10 +29,10 @@
                                     <a class="nav-link active" aria-current="page" href="#home">Home</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#blog">Blog</a>
+                                    <a class="nav-link" href="#tech">Blog</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#security">Security</a>
+                                    <a class="nav-link" href="#">Products</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="#contact">Contact Us</a>
@@ -60,6 +60,36 @@
                                 <li class="nav-item">
                                     <button class="btn btn-info">Download App</button>
                                 </li>
+
+                                <!-- alternative but wrong
+                                    
+                                <ul class="navbar-nav nav-social d-flex">
+                                    <li class="nav-item nav-social__nav-item">
+                                        <a class="nav-link" href="https://twitter.com/">
+                                            <i class="fab fa-twitter"></i>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item nav-social__nav-item">
+                                        <a class="nav-link" href="https://web.telegram.org/">
+                                            <i class="fab fa-telegram"></i>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item nav-social__nav-item">
+                                        <a class="nav-link" href="https://facebook.com/">
+                                            <i class="fab fa-facebook"></i>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item nav-social__nav-item">
+                                        <a class="nav-link" href="https://youtube.com/">
+                                            <i class="fab fa-youtube"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+
+                                <li class="nav-item">
+                                    <button class="btn btn-info">Download App</button>
+                                </li>
+                                -->
                             </ul>
                         </div>
                         </div>
@@ -89,21 +119,33 @@
                                     Download the App to speed up your company.
                                 </p>
                                 <div class="buttons">
-                                    <a href="https://www.apple.com/app-store">
+                                    <a class="btn btn-outline-light rounded-pill text-white border-white" href="https://www.apple.com/app-store">
+                                        <span>
+                                            <i class="fab fa-apple"></i>
+                                            App Store
+                                        </span>
+                                        <!--
                                         <button class="btn btn-outline-light rounded-pill text-white border-white">
                                             <span>
                                                 <i class="fab fa-apple"></i>
                                                 App Store
                                             </span>
                                         </button>
+                                        -->
                                     </a>
-                                    <a href="https://play.google.com/store">
+                                    <a class="btn btn-outline-info rounded-pill bg-info text-white border-white" href="https://play.google.com/store">
+                                        <span>
+                                            <i class="fab fa-android"></i>
+                                            Play Store
+                                        </span>
+                                        <!--
                                         <button class="btn btn-outline-info rounded-pill bg-info text-white border-white">
                                             <span>
                                                 <i class="fab fa-android"></i>
                                                 Play Store
                                             </span>
                                         </button>
+                                        -->
                                     </a>
                                 </div>
                             </div>
@@ -118,11 +160,11 @@
         <section class="tech" id="tech">
             <div class="container">
                 <div class="title d-flex justify-content-between">
-                    <h3 class="font-nun text-dark border-start left-border">
+                    <h3 class="font-nun text-dark border-start left-border ms-3">
                         Technology
                     </h3>
                     <h6>
-                        <a href="#" class="text-secondary">
+                        <a href="#" class="text-secondary me-3">
                             Technology Categories
                             <i class="fas fa-arrow-right"></i>
                         </a>
@@ -130,49 +172,601 @@
                 </div>
 
                 <!-- Slick Carousel -->
-                <div class="slider responsive">
+                <div class="slider responsive pb-4">
                     <div class="slider__item">
-                        <a href="#">
-                            <img class="img-fluid" src="./assets/blog/1.jpg" alt="blog-image-1">
-                        </a>
+                        <div class="img-hover">
+                            <a href="#">
+                                <img class="img-fluid py-3" src="./assets/blog/1.jpg" alt="blog-image-1">
+                            </a>
+                        </div>
+                        <div class="slider__item-title">
+                            <a href="#">
+                                <h5 class="py-2 font-nun">Our Customers Success Tell about Their Company Story</h5>
+                            </a>
+                            <p class="font-size-1 text-secondary">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                                Placeat obcaecati laborum id, deserunt aliquam beatae?
+                            </p>
+                            <div class="d-flex">
+                                <img src="./assets/face1.jpg" alt="face-image" class="rounded-pill">
+                                <a href="#" class="text-dark">Gina Jones</a>
+                                <span class="text-info">
+                                    <i class="fas fa-tree"></i>
+                                </span>
+                                <span class="text-secondary">
+                                    1 minute ago
+                                </span>
+                            </div>
+                        </div>
                     </div>
+
                     <div class="slider__item">
-                        <a href="#">
-                            <img class="img-fluid" src="./assets/blog/2.jpg" alt="blog-image-2">
-                        </a>
+                        <div class="img-hover">
+                            <a href="#">
+                                <img class="img-fluid py-3" src="./assets/blog/2.jpg" alt="blog-image-2">
+                            </a>
+                        </div>
+                        <div class="slider__item-title">
+                            <a href="#">
+                                <h5 class="py-2 font-nun">Introduce New Feature: Real-Time Analytics and Reports</h5>
+                            </a>
+                            <p class="font-size-1 text-secondary">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                                Placeat obcaecati laborum id, deserunt aliquam beatae?
+                            </p>
+                            <div class="d-flex">
+                                <img src="./assets/face1.jpg" alt="face-image" class="rounded-pill">
+                                <a href="#" class="text-dark">Gina Jones</a>
+                                <span class="text-info">
+                                    <i class="fas fa-tree"></i>
+                                </span>
+                                <span class="text-secondary">
+                                    1 minute ago
+                                </span>
+                            </div>
+                        </div>
                     </div>
+
                     <div class="slider__item">
-                        <a href="#">
-                            <img class="img-fluid" src="./assets/blog/3.jpg" alt="blog-image-3">
-                        </a>
+                        <div class="img-hover">
+                            <a href="#">
+                                <img class="img-fluid py-3" src="./assets/blog/3.jpg" alt="blog-image-3">
+                            </a>
+                        </div>
+                        <div class="slider__item-title">
+                            <a href="#">
+                                <h5 class="py-2 font-nun">Introduce New Feature: Real-Time Analytics and Reports</h5>
+                            </a>
+                            <p class="font-size-1 text-secondary">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                                Placeat obcaecati laborum id, deserunt aliquam beatae?
+                            </p>
+                            <div class="d-flex">
+                                <img src="./assets/face1.jpg" alt="face-image" class="rounded-pill">
+                                <a href="#" class="text-dark">Gina Jones</a>
+                                <span class="text-info">
+                                    <i class="fas fa-tree"></i>
+                                </span>
+                                <span class="text-secondary">
+                                    1 minute ago
+                                </span>
+                            </div>
+                        </div>
                     </div>
+
                     <div class="slider__item">
-                        <a href="#">
-                            <img class="img-fluid" src="./assets/blog/4.jpg" alt="blog-image-4">
-                        </a>
+                        <div class="img-hover">
+                            <a href="#">
+                                <img class="img-fluid py-3" src="./assets/blog/4.jpg" alt="blog-image-4">
+                            </a>
+                        </div>
+                        <div class="slider__item-title">
+                            <a href="#">
+                                <h5 class="py-2 font-nun">Our Customers Success Tell about Their Company Story</h5>
+                            </a>
+                            <p class="font-size-1 text-secondary">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                                Placeat obcaecati laborum id, deserunt aliquam beatae?
+                            </p>
+                            <div class="d-flex">
+                                <img src="./assets/face1.jpg" alt="face-image" class="rounded-pill">
+                                <a href="#" class="text-dark">Gina Jones</a>
+                                <span class="text-info">
+                                    <i class="fas fa-tree"></i>
+                                </span>
+                                <span class="text-secondary">
+                                    1 minute ago
+                                </span>
+                            </div>
+                        </div>
                     </div>
+
                     <div class="slider__item">
-                        <a href="#">
-                            <img class="img-fluid" src="./assets/blog/5.jpg" alt="blog-image-5">
-                        </a>
+                        <div class="img-hover">
+                            <a href="#">
+                                <img class="img-fluid py-3" src="./assets/blog/5.jpg" alt="blog-image-5">
+                            </a>
+                        </div>
+                        <div class="slider__item-title">
+                            <a href="#">
+                                <h5 class="py-2 font-nun">Introduce New Feature: Real-Time Analytics and Reports</h5>
+                            </a>
+                            <p class="font-size-1 text-secondary">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                                Placeat obcaecati laborum id, deserunt aliquam beatae?
+                            </p>
+                            <div class="d-flex">
+                                <img src="./assets/face1.jpg" alt="face-image" class="rounded-pill">
+                                <a href="#" class="text-dark">Gina Jones</a>
+                                <span class="text-info">
+                                    <i class="fas fa-tree"></i>
+                                </span>
+                                <span class="text-secondary">
+                                    1 minute ago
+                                </span>
+                            </div>
+                        </div>
                     </div>
+
                     <div class="slider__item">
-                        <a href="#">
-                            <img class="img-fluid" src="./assets/blog/6.jpg" alt="blog-image-6">
-                        </a>
+                        <div class="img-hover">
+                            <a href="#">
+                                <img class="img-fluid py-3" src="./assets/blog/6.jpg" alt="blog-image-6">
+                            </a>
+                        </div>
+                        <div class="slider__item-title">
+                            <a href="#">
+                                <h5 class="py-2 font-nun">Introduce New Feature: Real-Time Analytics and Reports</h5>
+                            </a>
+                            <p class="font-size-1 text-secondary">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                                Placeat obcaecati laborum id, deserunt aliquam beatae?
+                            </p>
+                            <div class="d-flex">
+                                <img src="./assets/face1.jpg" alt="face-image" class="rounded-pill">
+                                <a href="#" class="text-dark">Gina Jones</a>
+                                <span class="text-info">
+                                    <i class="fas fa-tree"></i>
+                                </span>
+                                <span class="text-secondary">
+                                    1 minute ago
+                                </span>
+                            </div>
+                        </div>
                     </div>
+
+                    <div class="slider__item">
+                        <div class="img-hover">
+                            <a href="#">
+                                <img class="img-fluid py-3" src="./assets/blog/2.jpg" alt="blog-image-2-a">
+                            </a>
+                        </div>
+                        <div class="slider__item-title">
+                            <a href="#">
+                                <h5 class="py-2 font-nun">Introduce New Feature: Real-Time Analytics and Reports</h5>
+                            </a>
+                            <p class="font-size-1 text-secondary">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                                Placeat obcaecati laborum id, deserunt aliquam beatae?
+                            </p>
+                            <div class="d-flex">
+                                <img src="./assets/face1.jpg" alt="face-image" class="rounded-pill">
+                                <a href="#" class="text-dark">Gina Jones</a>
+                                <span class="text-info">
+                                    <i class="fas fa-tree"></i>
+                                </span>
+                                <span class="text-secondary">
+                                    1 minute ago
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
                 <!-- /Slick Carousel -->
             </div>
         </section>
         <!-- /TECH -->
 
-    </main>
+        <!-- SECURITY -->
+        <section class="security" id="security">
+            <div class="container">
+                <div class="title d-flex justify-content-between">
+                    <h3 class="font-nun text-light border-start left-border ms-3">
+                        Security
+                    </h3>
+                    <h6>
+                        <a href="#" class="text-secondary me-3">
+                            Security Categories
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </h6>
+                </div>
 
+                <!-- Slick Carousel -->
+            <div class="slider responsive pb-4">
+                <div class="slider__item">
+                    <div class="img-hover">
+                        <a href="#">
+                            <img class="img-fluid py-3" src="./assets/blog/1.jpg" alt="blog-image-1">
+                        </a>
+                    </div>
+                    <div class="slider__item-title">
+                        <a href="#">
+                            <h5 class="py-2 font-nun text-light">Our Customers Success Tell about Their Company Story</h5>
+                        </a>
+                        <p class="font-size-1 text-secondary">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                            Placeat obcaecati laborum id, deserunt aliquam beatae?
+                        </p>
+                        <div class="d-flex">
+                            <img src="./assets/face1.jpg" alt="face-image" class="rounded-pill">
+                            <a href="#" class="text-light">Gina Jones</a>
+                            <span class="text-info">
+                                <i class="fas fa-tree"></i>
+                            </span>
+                            <span class="text-secondary">
+                                1 minute ago
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slider__item">
+                    <div class="img-hover">
+                        <a href="#">
+                            <img class="img-fluid py-3" src="./assets/blog/2.jpg" alt="blog-image-2">
+                        </a>
+                    </div>
+                    <div class="slider__item-title">
+                        <a href="#">
+                            <h5 class="py-2 font-nun text-light">Introduce New Feature: Real-Time Analytics and Reports</h5>
+                        </a>
+                        <p class="font-size-1 text-secondary">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                            Placeat obcaecati laborum id, deserunt aliquam beatae?
+                        </p>
+                        <div class="d-flex">
+                            <img src="./assets/face1.jpg" alt="face-image" class="rounded-pill">
+                            <a href="#" class="text-light">Gina Jones</a>
+                            <span class="text-info">
+                                <i class="fas fa-tree"></i>
+                            </span>
+                            <span class="text-secondary">
+                                1 minute ago
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slider__item">
+                    <div class="img-hover">
+                        <a href="#">
+                            <img class="img-fluid py-3" src="./assets/blog/3.jpg" alt="blog-image-3">
+                        </a>
+                    </div>
+                    <div class="slider__item-title">
+                        <a href="#">
+                            <h5 class="py-2 font-nun text-light">Introduce New Feature: Real-Time Analytics and Reports</h5>
+                        </a>
+                        <p class="font-size-1 text-secondary">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                            Placeat obcaecati laborum id, deserunt aliquam beatae?
+                        </p>
+                        <div class="d-flex">
+                            <img src="./assets/face1.jpg" alt="face-image" class="rounded-pill">
+                            <a href="#" class="text-light">Gina Jones</a>
+                            <span class="text-info">
+                                <i class="fas fa-tree"></i>
+                            </span>
+                            <span class="text-secondary">
+                                1 minute ago
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slider__item">
+                    <div class="img-hover">
+                        <a href="#">
+                            <img class="img-fluid py-3" src="./assets/blog/4.jpg" alt="blog-image-4">
+                        </a>
+                    </div>
+                    <div class="slider__item-title">
+                        <a href="#">
+                            <h5 class="py-2 font-nun text-light">Our Customers Success Tell about Their Company Story</h5>
+                        </a>
+                        <p class="font-size-1 text-secondary">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                            Placeat obcaecati laborum id, deserunt aliquam beatae?
+                        </p>
+                        <div class="d-flex">
+                            <img src="./assets/face1.jpg" alt="face-image" class="rounded-pill">
+                            <a href="#" class="text-light">Gina Jones</a>
+                            <span class="text-info">
+                                <i class="fas fa-tree"></i>
+                            </span>
+                            <span class="text-secondary">
+                                1 minute ago
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slider__item">
+                    <div class="img-hover">
+                        <a href="#">
+                            <img class="img-fluid py-3" src="./assets/blog/5.jpg" alt="blog-image-5">
+                        </a>
+                    </div>
+                    <div class="slider__item-title">
+                        <a href="#">
+                            <h5 class="py-2 font-nun text-light">Introduce New Feature: Real-Time Analytics and Reports</h5>
+                        </a>
+                        <p class="font-size-1 text-secondary">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                            Placeat obcaecati laborum id, deserunt aliquam beatae?
+                        </p>
+                        <div class="d-flex">
+                            <img src="./assets/face1.jpg" alt="face-image" class="rounded-pill">
+                            <a href="#" class="text-light">Gina Jones</a>
+                            <span class="text-info">
+                                <i class="fas fa-tree"></i>
+                            </span>
+                            <span class="text-secondary">
+                                1 minute ago
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slider__item">
+                    <div class="img-hover">
+                        <a href="#">
+                            <img class="img-fluid py-3" src="./assets/blog/6.jpg" alt="blog-image-6">
+                        </a>
+                    </div>
+                    <div class="slider__item-title">
+                        <a href="#">
+                            <h5 class="py-2 font-nun text-light">Introduce New Feature: Real-Time Analytics and Reports</h5>
+                        </a>
+                        <p class="font-size-1 text-secondary">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                            Placeat obcaecati laborum id, deserunt aliquam beatae?
+                        </p>
+                        <div class="d-flex">
+                            <img src="./assets/face1.jpg" alt="face-image" class="rounded-pill">
+                            <a href="#" class="text-light">Gina Jones</a>
+                            <span class="text-info">
+                                <i class="fas fa-tree"></i>
+                            </span>
+                            <span class="text-secondary">
+                                1 minute ago
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider__item">
+                    <div class="img-hover">
+                        <a href="#">
+                            <img class="img-fluid py-3" src="./assets/blog/2.jpg" alt="blog-image-2-a">
+                        </a>
+                    </div>
+                    <div class="slider__item-title">
+                        <a href="#">
+                            <h5 class="py-2 font-nun text-light">Introduce New Feature: Real-Time Analytics and Reports</h5>
+                        </a>
+                        <p class="font-size-1 text-secondary">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                            Placeat obcaecati laborum id, deserunt aliquam beatae?
+                        </p>
+                        <div class="d-flex">
+                            <img src="./assets/face1.jpg" alt="face-image" class="rounded-pill">
+                            <a href="#" class="text-light">Gina Jones</a>
+                            <span class="text-info">
+                                <i class="fas fa-tree"></i>
+                            </span>
+                            <span class="text-secondary">
+                                1 minute ago
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <!-- /Slick Carousel -->
+            </div>
+        </section>
+        <!-- /SECURITY -->
+
+        <!-- FAVOURITE -->
+        <section class="favourite" id="favourite">
+            <div class="container">
+                <div class="title d-flex">
+                    <h3 class="font-nun text-dark border-start left-border ms-3">
+                        Editors Favourite
+                    </h3>
+                    <h6>
+                        <a href="#" class="text-secondary nav-link font-size-1">
+                            All / Security / Technology
+                        </a>
+                    </h6>
+                </div>
+                <!-- Slick Carousel -->
+                <div class="slider responsive">
+                    <div class="slider__item">
+                        <div class="img-hover">
+                            <a href="#">
+                                <img class="img-fluid py-3" src="./assets/blog/1.jpg" alt="blog-image-1">
+                            </a>
+                        </div>
+                        <div class="slider__item-title">
+                            <a href="#">
+                                <h5 class="py-1 font-nun font-size-1">Our Customers Success Tell about Their Company Story</h5>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="slider__item">
+                        <div class="img-hover">
+                            <a href="#">
+                                <img class="img-fluid py-3" src="./assets/blog/2.jpg" alt="blog-image-2">
+                            </a>
+                        </div>
+                        <div class="slider__item-title">
+                            <a href="#">
+                                <h5 class="py-1 font-nun font-size-1">Introduce New Feature: Real-Time Analytics and Reports</h5>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="slider__item">
+                        <div class="img-hover">
+                            <a href="#">
+                                <img class="img-fluid py-3" src="./assets/blog/3.jpg" alt="blog-image-3">
+                            </a>
+                        </div>
+                        <div class="slider__item-title">
+                            <a href="#">
+                                <h5 class="py-1 font-nun font-size-1">Introduce New Feature: Real-Time Analytics and Reports</h5>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="slider__item">
+                        <div class="img-hover">
+                            <a href="#">
+                                <img class="img-fluid py-3" src="./assets/blog/4.jpg" alt="blog-image-4">
+                            </a>
+                        </div>
+                        <div class="slider__item-title">
+                            <a href="#">
+                                <h5 class="py-1 font-nun font-size-1">Our Customers Success Tell about Their Company Story</h5>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="slider__item">
+                        <div class="img-hover">
+                            <a href="#">
+                                <img class="img-fluid py-3" src="./assets/blog/5.jpg" alt="blog-image-5">
+                            </a>
+                        </div>
+                        <div class="slider__item-title">
+                            <a href="#">
+                                <h5 class="py-1 font-nun font-size-1">Introduce New Feature: Real-Time Analytics and Reports</h5>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="slider__item">
+                        <div class="img-hover">
+                            <a href="#">
+                                <img class="img-fluid py-3" src="./assets/blog/6.jpg" alt="blog-image-6">
+                            </a>
+                        </div>
+                        <div class="slider__item-title">
+                            <a href="#">
+                                <h5 class="py-1 font-nun font-size-1">Introduce New Feature: Real-Time Analytics and Reports</h5>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="slider__item">
+                        <div class="img-hover">
+                            <a href="#">
+                                <img class="img-fluid py-3" src="./assets/blog/2.jpg" alt="blog-image-2-a">
+                            </a>
+                        </div>
+                        <div class="slider__item-title">
+                            <a href="#">
+                                <h5 class="py-1 font-nun font-size-1">Introduce New Feature: Real-Time Analytics and Reports</h5>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- /Slick Carousel -->
+            </div>
+        </section>
+        <!-- /FAVOURITE -->
+
+    </main>
     <!-- /MAIN -->
 
     <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <!-- column 1-->
+                <div class="col-sm-12 col-md-3 col-lg-3 mt-3 mt-lg-0">
+                    <h4 class="font-nun">Best App</h4>
+                    <p class="font-size-1 text-secondary">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Dolorum illo fuga soluta ex sunt earum facere, id dolore provident qui.
+                    </p>
+                    <div class="d-flex social">
+                        <a class="nav-link text-dark ps-0" href="https://twitter.com/">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a class="nav-link text-dark" href="https://web.telegram.org/">
+                            <i class="fab fa-telegram"></i>
+                        </a>
+                        <a class="nav-link text-dark" href="https://facebook.com/">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a class="nav-link text-dark" href="https://youtube.com/">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                    <img src="./assets/payment-sys.png" class="img-fluid pt-2" alt="payment-methods">
+                </div>
 
+                <!-- column 2-->
+                <div class="col-sm-6 col-md-3 col-lg-2 mt-5 mt-lg-0">
+                    <div class="company">
+                        <h6 class="font-nun">Company</h6>
+                        <div class="d-flex flex-column font-size-4">
+                            <a href="#">About Us</a>
+                            <a href="#">Tech Blog</a>
+                            <a href="#">Security Blog</a>
+                            <a href="#">Feedback</a>
+                            <a href="#">Products</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- column 3-->
+                <div class="col-sm-6 col-md-3 col-lg-2 mt-5 mt-lg-0">
+                    <div class="company">
+                        <h6 class="font-nun">Support</h6>
+                        <div class="d-flex flex-column font-size-4">
+                            <a href="#">Contact Us</a>
+                            <a href="#">Privacy Policy</a>
+                            <a href="#">Terms of Use</a>
+                            <a href="#">Sitemap</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- column 4-->
+                <div class="col-md-12 col-lg-3 mt-5 mt-lg-0">
+                    <div class="newsletter border text-center">
+                        <h6 class="h6 font-nun">Subscribe to Newsletter</h6>
+                        <p class="font-size-1 text-secondary">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                        </p>
+                        <div class="d-flex justify-content-center">
+                            <input type="text" class="form-control fs-6 border-0" placeholder="email@example.com">
+                        </div>
+                        <button class="btn my-2 bg-dark text-white">
+                            Sign Up
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
     <!-- /FOOTER -->
     
 
