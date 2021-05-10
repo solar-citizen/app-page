@@ -8,18 +8,18 @@
 @import "../node_modules/slick-carousel/slick/slick-theme.scss";
 
 // Fonts
-@import "./include/fonts";
+@import "include/fonts";
 
 // Templates
-@import "./include/variables";
-@import "./include/global";
-@import "./include/header";
-@import "./include/banner";
-@import "./include/tech";
-@import "./include/security";
-@import "./include/footer";
+@import "include/variables";
+@import "include/global";
+@import "include/header";
+@import "include/banner";
+@import "include/tech";
+@import "include/security";
+@import "include/footer";
 
 body {
-  background: url("../assets/site_background.png") no-repeat;
+  background: url("/assets/site_background.png") no-repeat;
   background-size: cover;
 }

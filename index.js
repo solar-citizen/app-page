@@ -90,7 +90,7 @@ $(document).ready(function(){
         mobileFirst: true,
         autoplay: true,
         //infinite: false,
-        speed: 700,
+        speed: 400,
         slidesToShow: 5,
         slidesToScroll: 5,
         responsive: [{

@@ -67,4 +67,17 @@
       }
     }
   }
+
+  .copyrights {
+    p {
+      color: $dark;
+
+      > a {
+        color: $purple;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
 }

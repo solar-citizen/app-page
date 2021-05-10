@@ -11333,8 +11333,17 @@ body a {
 .footer .newsletter .btn:hover {
   background: #6930c3 !important;
 }
+.footer .copyrights p {
+  color: #212529;
+}
+.footer .copyrights p > a {
+  color: #6930c3;
+}
+.footer .copyrights p > a:hover {
+  text-decoration: underline;
+}
 
 body {
-  background: url("../assets/site_background.png") no-repeat;
+  background: url("/assets/site_background.png") no-repeat;
   background-size: cover;
 }
